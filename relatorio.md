@@ -90,21 +90,17 @@ Os valores abaixo representam as médias das 50 execuções para cada cenário. 
 | 100.000 | Binária     | 0.0055           | 0.0009            | 17,00              | 0,00               |
 
 ### 3.2 Gráficos Comparativos
-Os gráficos gerados (`tempo_execucao.png` e `comparacoes.png`) apresentam:
-- Eixo X: Tamanho da entrada (apenas 1000, 10000 e 100000)
-- Eixo Y: Tempo médio de execução (em milissegundos) ou número médio de comparações
-- Linhas sólidas: Caso médio; Linhas tracejadas: Pior caso
-- Barras de erro: Desvio padrão das 50 execuções
-- Todas as linhas dos algoritmos e casos estão presentes
 
-**Análise visual dos gráficos:**
+Os gráficos gerados (`tempo_execucao.png` e `comparacoes.png`) apresentam:
+
+![Gráfico de Tempo de Execução](tempo_execucao.png)
+
+![Gráfico de Número de Comparações](comparacoes.png)
 
 - O gráfico de tempo de execução mostra claramente que a busca sequencial tem crescimento linear tanto no caso médio quanto no pior caso, com o pior caso sempre acima do caso médio. A variação (barras de erro) aumenta com o tamanho da entrada, especialmente no caso médio, refletindo a aleatoriedade da posição do elemento.
 - A busca binária, por outro lado, apresenta tempos extremamente baixos e praticamente constantes, tanto no caso médio quanto no pior caso, mesmo para 100.000 elementos. As barras de erro são quase imperceptíveis, indicando alta estabilidade e previsibilidade do algoritmo.
 - No gráfico de número de comparações, a busca sequencial novamente cresce linearmente, enquanto a busca binária cresce de forma logarítmica, mantendo-se em valores muito baixos. O caso médio da busca sequencial apresenta maior variação, enquanto o pior caso é constante (igual ao tamanho da entrada).
 - A separação visual entre as linhas azul (sequencial) e laranja (binária) evidencia a superioridade da busca binária em termos de eficiência, especialmente para grandes volumes de dados.
-
-Esses gráficos ilustram de forma clara e didática a diferença de complexidade entre os algoritmos, validando a análise teórica apresentada anteriormente.
 
 ### 3.3 Análise dos Resultados
 Os resultados obtidos confirmam a análise teórica da complexidade dos algoritmos:
