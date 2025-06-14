@@ -1,6 +1,6 @@
 # Estudo Comparativo de Algoritmos de Busca
 
-Atividade complementar da disciplina de Teoria da Computação e Análise de Algoritmos da PUCCAMP, ministrada pelo Prof. José Guilherme Picolo. Aqui implementamos um estudo comparativo entre os algoritmos de busca sequencial e busca binária, analisando seu desempenho em diferentes cenários.
+Atividade complementar da disciplina de Teoria da Computação e Análise de Algoritmos da PUCCAMP, ministrada pelo Prof. José Guilherme Picolo. Aqui implementamos um estudo comparativo entre os algoritmos de busca sequencial O(n) e busca binária O(log n), analisando seu desempenho em diferentes cenários.
 
 ## Requisitos
 
@@ -40,10 +40,3 @@ O programa irá:
 - `requirements.txt`: Dependências do projeto
 - `README.md`: Este arquivo
 - `resultados_busca.csv`: Resultados estatísticos das execuções (gerado automaticamente)
-
-## Análise de Complexidade
-
-- Busca Sequencial: O(n)
-- Busca Binária: O(log n)
-
-Onde n é o tamanho da entrada.
